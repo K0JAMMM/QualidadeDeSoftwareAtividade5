@@ -84,9 +84,7 @@ API_URL=http://localhost:8080 BASE_URL=http://localhost:3000 npm test
 | 2 | `POST /auth/signup` com e-mail duplicado | 409 "E-mail já está em uso" |
 | 3 | `POST /auth/signup` com senha inválida | 422 "Senha inválida" |
 | 4 | `POST /auth/signin` com credenciais válidas | 200 + `{ id, email }` |
-| 5 | `POST /auth/signin` com senha incorreta | 401 "Credenciais inválidas" |
-| 6 | `GET /posts` paginado | 200 + lista de posts |
-| 7 | `GET /posts/liked` sem `userId` | erro 4xx |
+
 
 ### E2E (`tests/e2e`)
 
